@@ -626,7 +626,7 @@ def generated_brief_page(p: dict, remaining: int) -> str:
         meta_bits.append(f"worn {mon['wear_pct']}%")
     meta_row = " · ".join(meta_bits)
 
-    ai_note = " · narrative written live by GPT-4o from the computed values above" if p.get("ai_generated") else ""
+    ai_note = " · narrative written live by GPT-5.5 from the computed values above" if p.get("ai_generated") else ""
     if p.get("rule_fired"):
         rf = p["rule_fired"]
         audit = (f"Escalation trigger: rule <b>{rf['id']}</b> — {rf['detail']}{ai_note}. "

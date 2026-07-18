@@ -27,7 +27,7 @@ This is the cure for the curse.
 
 1. **Deterministic rules** detect decompensation and set the triage state. Auditable, reproducible,
    personal-baseline, debounced. The rules own the alert — the AI never does.
-2. **GPT-4o** writes the clinician-facing narrative from the *computed* numbers and the *already-decided*
+2. **GPT-5.5** writes the clinician-facing narrative from the *computed* numbers and the *already-decided*
    state. It cannot invent a value, change the state, or raise an alert. Its worst failure is bad prose.
 3. **A clinician** validates a written conclusion with the evidence one tap away.
 
@@ -44,7 +44,7 @@ Open http://localhost:8000 and upload an Apple Health export (Health app → pro
 ## Stack
 
 Python · FastAPI · streaming Apple Health XML parser · personal-baseline rule engine ·
-OpenAI GPT-4o (narrative layer only) · Fly.io.
+OpenAI GPT-5.5 (narrative layer only) · Fly.io.
 
 ## Evidence base
 

@@ -10,7 +10,7 @@ import json
 import os
 import urllib.request
 
-MODEL = os.environ.get("OPENAI_MODEL", "gpt-4o")
+MODEL = os.environ.get("OPENAI_MODEL", "gpt-5.5")
 ENDPOINT = "https://api.openai.com/v1/chat/completions"
 
 SYSTEM = (
@@ -37,7 +37,6 @@ def generate_narrative(features: dict, state: str, negatives: list) -> dict | No
         return None
     payload = {
         "model": MODEL,
-        "temperature": 0.3,
         "response_format": {"type": "json_object"},
         "messages": [
             {"role": "system", "content": SYSTEM},
