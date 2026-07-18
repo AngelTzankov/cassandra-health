@@ -1,0 +1,10 @@
+.venv
+tunnel.log
+*.zip
+__pycache__
+run.sh
+fixtures/live-*.json
+_local_only/
+build_hf.py
+seed_*.py
+.env

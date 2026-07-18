@@ -1,0 +1,22 @@
+# secrets — NEVER commit
+.env
+*.key
+
+# real patient data — keep private
+_local_only/
+fixtures/live-*.json
+fixtures/sync-*.json
+*.zip
+
+# submission notes (not for public repo)
+SUBMISSION.md
+
+# python / env
+.venv/
+__pycache__/
+*.pyc
+
+# runtime
+tunnel.log
+server.log
+DEMO_SCRIPT.md
